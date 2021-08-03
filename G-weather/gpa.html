@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+    <body>
+    
+    <div class="typewriter">
+		<h1>CHECK GPA</h1>
+
+
+	</div>
+
+    <div class="topnav">
+
+		<a href=" index.html">HOME <i class="bi bi-house-fill"></i></a>
+		<a href="gpa.html">GPA CALCULATOR <i class="bi bi-calculator-fill"></i></a>
+		<a href="GroupMembers.html">GROUP MEMBERS <i class="bi bi-people-fill"></i></a>
+	</div>
+    
+
+
+
+<div class="column-m">
+			<div class="container">
+				<h2>Check your GPA here!</h2><br />
+				<main>
+					<section class="section-con">
+						<form name="formBody" id="formdata" method="post" onSubmit="addUpCreditsGpa; return false">
+							<table class="table-con">
+								<thead>
+									<tr>
+										<td>Course</td>
+										<td>Unit</td>
+										<td>Grade</td>
+									</tr>
+								</thead>
+								<tbody id="tableBody">
+									<tr>
+										<td>
+											<input type="text" name="courseCode" class="code-input">
+										</td>
+										<td>
+											<select name="creditUnit" class="select" onchange="addUpCreditsGpa()">
+												<option value="6">6</option>
+												<option value="5">5</option>
+												<option value="4">4</option>
+												<option value="3">3</option>
+												<option value="2">2</option>
+												<option value="1">1</option>
+											</select>
+										</td>
+										<td>
+											<select name="grade" class="select" onchange="addUpCreditsGpa()">
+												<option value="A">A</option>
+												<option value="B+">B+</option>
+												<option value="B">B</option>
+												<option value="C+">C+</option>
+												<option value="C">C</option>
+												<option value="D">D+</option>
+												<option value="D">D</option>
+												<option value="E">E</option>
+												<option value="F">F</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<input type="text" name="courseCode" class="code-input">
+										</td>
+										<td>
+											<select name="creditUnit" class="select" onchange="addUpCreditsGpa()">
+												<option value="6">6</option>
+												<option value="5">5</option>
+												<option value="4">4</option>
+												<option value="3">3</option>
+												<option value="2">2</option>
+												<option value="1">1</option>
+											</select>
+										</td>
+										<td>
+											<select name="grade" class="select" onchange="addUpCreditsGpa()">
+												<option value="A">A</option>
+												<option value="B+">B+</option>
+												<option value="B">B</option>
+												<option value="C+">C+</option>
+												<option value="C">C</option>
+												<option value="D+">D+</option>
+												<option value="D">D</option>
+												<option value="E">E</option>
+												<option value="F">F</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+
+					</section>
+					<section class="section-con">
+						<button form="formdata" onclick="addNewRow()">&nbsp;&nbsp;&nbsp;Add&nbsp;&nbsp;</button>
+						<button form="formresult" onclick="addUpCreditsGpa()">Calculate</button>
+					</section>
+					<section class="section-con">
+						<form id="formresult" name="results" method="post" onSubmit="return false">
+							<table class="table-con-result">
+								<thead>
+									<tr>
+										<td>Total CU</td>
+										<td>GPA</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<input type="text" name="totalUnit" class="result-input" onchange="addUpCreditsGpa()">
+										</td>
+										<td>
+											<input type="text" name="gpa" class="result-input" onchange="addUpCreditsGpa()">
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</section>
+				</main>
+
+			</div>
+
+		</div>
+
+        <script src="gpa.js"></script>
+</body>
+</html>

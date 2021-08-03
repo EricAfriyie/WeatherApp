@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<link
+      href="https://api.fontshare.com/css?f[]=bespoke-stencil@300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/css?f[]=pally@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+	
+
+</head>
+
+<body>
+
+
+     
+	<div class="typewriter">
+		<h1>CHECK WEATHER</h1>
+
+
+	</div>
+
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<div class="topnav" id="myTopnav">
+
+		<a href="index.html">HOME <i class="bi bi-house-fill"></i></a>
+		<a href="gpa.html">GPA CALCULATOR <i class="bi bi-calculator-fill"></i></a>
+		<a href="GroupMembers.html">GROUP MEMBERS <i class="bi bi-people-fill"></i></a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+	</div>
+
+
+
+	
+
+    
+
+    
+
+
+
+
+
+
+	<div class="row">
+		<div class="column side">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="graphics/med.png" alt="Card image cap">
+				<div class="card-body">
+					<p class="card-text">Click <a href="https://who.int">HERE</a> for more information about the corona virus and don't forget to stay safe</p>
+				</div>
+			</div>
+			<br>
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="graphics/more.png" alt="Card image cap">
+				<div class="card-body">
+					<p class="card-text">For latest and trending news in the world check <a href="https://CNN.com">here</a> </p>
+				</div>
+			</div>
+
+
+
+
+
+
+
+		</div>
+
+		<div class="column middle">
+
+			
+			  <section class="top-banner">
+				<div class="container">
+				  <h2 class="heading">Simple Weather App</h2>
+				  <form>
+					<input type="text" placeholder="Search for a city" autofocus>
+					<button type="submit">SUBMIT</button>
+					<span class="msg"></span>
+				  </form>
+				</div>
+			  </section>
+			  <section class="ajax-section">
+				<div class="container">
+				  <ul class="cities"></ul>
+				</div>
+			  </section>
+			  
+		</div>
+
+		<div class="column side">
+			<p id="ad">Advertisement</p>
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="graphics/absa.jpg" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="graphics/voda.jpg" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="graphics/mtn.jpg" class="d-block w-100" alt="...">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+			<br/>
+			<button  type="submit" class="btn btn-secondary btn-lg btn-block" name="submit">Advertise with us Now</button>
+
+			<br/>
+			<br />
+			<h5>
+				<marquee>SEND US YOUR FEEDBACK</marquee>
+			</h5>
+			<form  action="index.php" method="get" >
+				<div class="mb-3">
+
+					<label for="e-mail" class="form-label">Email address</label>
+					<input type="email" class="form-control"  name="e-mail" placeholder="name@example.com">
+				</div>
+				<div class="mb-3">
+					<label for="txt" class="form-label">Enter Text</label>
+					<textarea class="form-control" id="txt" rows="3" name="txt"></textarea>
+				</div>
+
+				<button  type="submit" class="btn btn-secondary btn-lg btn-block" name="submit">Submit Form button</button>
+			</form>
+		</div>
+	</div>
+
+			
+	
+
+
+
+	<br />
+
+      <div class="footer-copyright">
+        <div class="footer-copyright-wrapper">
+          <p class="footer-copyright-text">
+            <a class="footer-copyright-link" href="#" target="_self"> ©2021. | Designed By: Group 2. | All rights reserved. </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+	<!--carousel-->
+
+
+	<!--carousel-->
+
+	<div class="box">
+
+	</div>
+
+
+
+
+
+
+
+	<script src="index.js"></script>
+	<script src="bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+	<!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+		<script src="./src/js/forecast.js"></script>
+		<script src="./src/js/app.js"></script>
+
+
+
+</body>
+
+</html>
